@@ -65,18 +65,18 @@
     },
     health_status:{
         type:String,
-        enum:['dull'  , 'active_alert']
+        enum:['dull'  , 'active alert']
     },
     deformity_status:Boolean,
     disease_condition_history:{
         type:String,
-        enum:['diarrhea' , 'cough' ,'fever' , 'skin allergy' , 'injury' , 'indigestion' , 'disease_free']
+        enum:['diarrhea' , 'cough' ,'fever' , 'skin allergy' , 'injury' , 'indigestion' , 'disease free']
     },
     vet_consultency: Boolean,
     treatment_history:String,
     withdrawal_period : {
         type:String,
-        enum:['completed' , 'not_completed']
+        enum:['completed' , 'not completed' , 'no drug']
     },
     vaccination_status:Boolean,
     deworming_status: Boolean, 
@@ -106,7 +106,7 @@
     supplement_type: String,
     drinking_water_type : {
         type: String,
-        enum: ["ground_water" , "supply_water" , 'canal_water' , 'pond_water' , 'unknown_water_source']
+        enum: ["ground water" , "supply water" , 'canal water' , 'pond water' , 'unknown water source']
     },
     butcher_name : String,
     slaughter_date : String,
