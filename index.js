@@ -6,12 +6,11 @@ const app= express();
 const PORT = 3000;
 
 // const userLogsModel= require('./models/userLogsModels')
-app.use("/animal_images" , express.static('/animal_images'))
+app.use("/tmp" , express.static('tmp'))
 
 const cors = require('cors');
 mongoose.set('strictQuery' , false)
 
-app.use("/animal_images" , express.static("animal_images"))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(cors({
